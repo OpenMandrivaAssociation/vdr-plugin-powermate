@@ -2,7 +2,7 @@
 %define plugin	powermate
 %define name	vdr-plugin-%plugin
 %define version	0.0.5
-%define rel	2
+%define rel	3
 
 Summary:	VDR plugin: Control VDR through a Griffin PowerMate
 Name:		%name
