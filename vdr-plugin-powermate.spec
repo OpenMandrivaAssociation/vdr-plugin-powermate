@@ -2,7 +2,7 @@
 %define plugin	powermate
 %define name	vdr-plugin-%plugin
 %define version	0.0.5
-%define rel	3
+%define rel	4
 
 Summary:	VDR plugin: Control VDR through a Griffin PowerMate
 Name:		%name
@@ -12,7 +12,6 @@ Group:		Video
 License:	GPL
 URL:		http://home.arcor.de/andreas.regel/vdr_plugins.htm
 Source:		http://home.arcor.de/andreas.regel/files/powermate/vdr-%plugin-%version.tgz
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
@@ -34,17 +33,7 @@ param=--device=POWERMATE_DEVICE
 %vdr_plugin_build
 
 %install
-rm -rf %{buildroot}
 %vdr_plugin_install
-
-%clean
-rm -rf %{buildroot}
-
-%post
-%vdr_plugin_post %plugin
-
-%postun
-%vdr_plugin_postun %plugin
 
 %files -f %plugin.vdr
 %defattr(-,root,root)
