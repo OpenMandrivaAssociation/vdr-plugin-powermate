@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Control VDR through a Griffin PowerMate
 Name:		vdr-plugin-%plugin
 Version:	0.0.5
-Release:	5
+Release:	6
 Group:		Video
 License:	GPL
 URL:		http://home.arcor.de/andreas.regel/vdr_plugins.htm
