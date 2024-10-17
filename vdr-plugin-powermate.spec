@@ -6,7 +6,7 @@ Version:	0.0.5
 Release:	6
 Group:		Video
 License:	GPL
-URL:		http://home.arcor.de/andreas.regel/vdr_plugins.htm
+URL:		https://home.arcor.de/andreas.regel/vdr_plugins.htm
 Source:		http://home.arcor.de/andreas.regel/files/powermate/vdr-%plugin-%{version}.tgz
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
